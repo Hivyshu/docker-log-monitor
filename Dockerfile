@@ -4,8 +4,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY app.py .
-RUN mkdir logs
+COPY . .
 
 ENV LOG_FILE=logs/app.log
 
